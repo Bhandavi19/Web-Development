@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables</title>
+</head>
+<style>
+    :root {
+        --color: aqua;
+        --seccol: rgb(215, 123, 123);
+        --padding: 10px;
+        --margin: 20px;
+    }
+
+    div p {
+        margin: var(--margin);
+        padding: var(--padding);
+        background-color: var(--color);
+        color: var(--seccol);
+        display: inline-block;
+    }
+</style>
+
+<body>
+    <div>
+        <p>i am para</p>
+        <p>I am another para</p>
+    </div>
+</body>
+
+</html>
+
+
+<!-- by using variables we can apply the variables where ever we want in the CSS code . there is no need of again and again creating -->

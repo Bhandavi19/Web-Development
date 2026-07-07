@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced Dynamic Styles</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; transition: 0.5s; padding: 20px; }
+        button, select { padding: 10px; margin: 5px; cursor: pointer; border: none; }
+        .dark-mode { background: #222; color: white; }
+        .large-text { font-size: 20px; }
+    </style>
+</head>
+<body>
+
+    <h1>Enhanced Dynamic Web Page Styling</h1>
+    
+    <button id="themeToggle">Toggle Dark Mode</button>
+    <button id="textSizeToggle">Toggle Large Text</button>
+    
+    <select id="bgColor">
+        <option value="">Select Background Color</option>
+        <option value="lightblue">Light Blue</option>
+        <option value="lightgreen">Light Green</option>
+        <option value="lightcoral">Light Coral</option>
+    </select>
+
+    <script>
+        document.getElementById("themeToggle").addEventListener("click", function() {
+            document.body.classList.toggle("dark-mode");
+        });
+
+        document.getElementById("textSizeToggle").addEventListener("click", function() {
+            document.body.classList.toggle("large-text");
+        });
+
+        document.getElementById("bgColor").addEventListener("change", function() {
+            document.body.style.backgroundColor = this.value || ""; 
+        });
+    </script>
+
+</body>
+</html>

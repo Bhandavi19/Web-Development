@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Animations</title>
+    <style>
+        .conatiner {
+            background-color: blue;
+            width: 30vw;
+            height: 50vh;
+        }
+
+        .box {
+            /* background-color: greenyellow; */
+            /* width: 60px;
+            height: 50px; */
+            margin: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+            /* animation-duration: 3s;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: 3;
+            animation-delay: 1s; */
+            animation: Bhandavi 2s ease-out 1s 4,
+                       Bhandavi2 2s ease-out 1s 4;
+
+
+        }
+
+        .box1{
+            animation: three 10s linear infinite;
+        }
+
+        @keyframes Bhandavi {
+            from {
+                transform: translateX(100%);
+                background-color: red;
+            }
+
+            to {
+                transform: translateX(-100%);
+                background-color: yellow;
+            }
+
+        }
+        @keyframes Bhandavi2 {
+            0%{
+                transform:scale(0.5);
+            }
+            20%{
+                transform:scale(1.5);
+            }
+            50%{
+                transform:scale(2.5);
+            }
+            100%{
+                transform:scale(3.5);
+            }
+            
+        }
+
+        @keyframes three {
+            from{
+                transform: translate(100%);
+            }
+            to{
+                transform: translate(-100%);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="conatiner">
+        <div class="box">Box is in red color changing to yellow color</div>
+    </div>
+
+    
+        <div class="box1">My name is Bhandavi</div>
+    
+</body>
+
+</html>

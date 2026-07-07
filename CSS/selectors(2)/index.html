@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors</title>
+    <style>
+        /* Element Selector */
+
+
+        /* class Selector */
+        .bhandavi {
+            color: blueviolet;
+            background-color: beige;
+        }
+
+        /* ID Selector */
+        #boom {
+            color: rgb(181, 131, 55);
+            background-color: aquamarine;
+        }
+
+        /* Decendent Selector */
+        div p {
+            color: whitesmoke;
+            background-color: black;
+        }
+
+        /* Child Selector */
+        div>p {
+            color: rgb(172, 233, 233);
+            background-color: rgb(89, 89, 95);
+        }
+
+        /* Universal selector */
+        * {
+            margin: 0%;
+            padding: 2%;
+        }
+
+        /* psuedo selector */
+        a:visited {
+            color: orange;
+        }
+
+        a:link {
+            color: yellow;
+        }
+
+        a:hover {
+            color: pink;
+        }
+
+        a:active {
+            color: green;
+        }
+
+        p:first-child {
+            color: rgb(228, 37, 184);
+        }
+
+        .boxes {
+            background-color: blanchedalmond;
+        }
+
+        .box:nth-child(even) {
+            background-color: blue;
+            color: aliceblue;
+        }
+
+        p,
+        main {
+            background-color: aqua;
+        }
+
+        .box:first-letter {
+            color: rgb(224, 72, 72);
+            font-size: 2em;
+        }
+
+        /* attribute selector */
+        [data-color=sec] {
+            color: rgb(77, 197, 157);
+        }
+
+        .boxes::before {
+            content: "Hey..! Good Morning";
+        }
+
+        .boxes::after {
+            content: "Byee..! Good Night";
+        }
+
+        .boxes ::selection {
+            background-color: rgb(0, 0, 0);
+            color: coral
+        }
+
+        .box {
+            background-color: blanchedalmond;
+        }
+
+        div {
+            color: rgb(151, 76, 49);
+            background-color: rgb(126, 175, 218);
+        }
+    </style>
+</head>
+
+<body>
+    <main class="one">
+        <p>I am first</p>
+        <p>I am second</p>
+    </main>
+    <p>i am para</p>
+
+    <div>
+        I am in div
+    </div>
+
+    <div class="bhandavi">
+        I am a div with a class
+    </div>
+    <div id="boom">
+        I am a div with ID
+    </div>
+
+    <div>
+        <p>I am a child of div</p>
+    </div>
+
+
+    <div>
+        <article>
+            <p>
+                I am div with article in para
+            </p>
+        </article>
+        <p>i am a para</p>
+        <p>I am a another para</p>
+
+    </div>
+
+    <div>
+        <a href="https://www.google.com">Open Google</a>
+        <a href="https://www.facebook.com">Open FaceBook</a>
+    </div>
+    <div class="boxes">
+        <div class="box" data-color="sec">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, iste
+            necessitatibus enim
+            asperiores eum quidem ut quas adipisci nihil ipsam, quae debitis mollitia! Unde quaerat, fuga quisquam amet
+            tempore ullam!</div>
+        <div class="box">I am Box2</div>
+        <div class="box">I am Box3</div>
+    </div>
+</body>
+
+</html>

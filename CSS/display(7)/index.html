@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Display</title>
+</head>
+<style>
+    div {
+        border: 2px solid black;
+        display: inline-block;
+        color: rgb(225, 23, 23);
+        margin: 20px;
+        padding: 20px;
+        /* visibility: hidden; */
+        /* display: none; */
+    display: inline-flex;
+    
+
+    }
+    span{
+        border: 2px solid black;
+        /* display: block; */
+        /* display: none; */
+    }
+</style>
+
+<body>
+    <div>
+        I am in div
+    </div>
+    <span>
+        I am in
+    </span>
+    <span>
+        span
+    </span>
+</body>
+
+</html>
+
+
+<!-- to convert block element to inline we just need to keep the display property in style tag as inline -->
+
+<!-- if we just do inline we won't get margin and padding in a correct way so we need to put them as inline-block -->
+
+
+<!-- the difference between visibility and display none is display none removes the space which it used but visibility just removes the content keeps he space as it is -->

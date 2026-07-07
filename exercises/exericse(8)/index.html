@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercise-8</title>
+    <style>
+        div {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+
+
+        }
+
+        .container {
+            width: 150px;
+            height: 150px;
+            background-color: #ddd;
+
+        }
+
+        .box {
+            width: 150px;
+            height: 150px;
+            background-color: rgba(56, 207, 248, 0.5);
+            color: white;
+            transition: all 0.5s ease;
+            font-size: 25px;
+        }
+
+        .container:hover .box {
+            transform: scale(1.5);
+            cursor: pointer;
+        }
+
+        .con1 {
+            width: 150px;
+            height: 150px;
+            background-color: #ddd;
+        }
+
+        .box1 {
+            width: 150px;
+            height: 150px;
+            background-color: rgba(56, 207, 248, 0.5);
+            color: white;
+            transition: all 0.5s ease;
+            font-size: 25px;
+        }
+
+        .con1:hover .box1 {
+            transform: skew(30deg);
+            cursor: pointer;
+        }
+
+        .con2 {
+            width: 150px;
+            height: 150px;
+            background-color: #ddd;
+
+        }
+
+        .box2 {
+            width: 150px;
+            height: 150px;
+            background-color: rgba(56, 207, 248, 0.5);
+            color: white;
+            transition: all 0.5s ease 0.25s;
+            font-size: 25px;
+        }
+
+        .con2:hover .box2 {
+            transform: rotate(270deg);
+            cursor: pointer;
+        }
+
+        .con3 {
+            width: 150px;
+            height: 150px;
+            background-color: #ddd;
+        }
+
+        .box3 {
+            width: 150px;
+            height: 150px;
+            background-color: rgba(56, 207, 248, 0.5);
+            color: white;
+            transition: all 0.5s ease 0.25s;
+            font-size: 25px;
+        }
+
+        .con3:hover .box3 {
+            transform: translate(30px);
+            cursor: pointer;
+        }
+
+        .con4 {
+            width: 150px;
+            height: 150px;
+            background-color: #ddd;
+        }
+
+        .box4 {
+            width: 150px;
+            height: 150px;
+            background-color: rgba(56, 207, 248, 0.5);
+            color: white;
+            transition: all 0.5s ease 0.25s;
+            font-size: 25px;
+        }
+
+        .con4:hover .box4 {
+            transform: matrix(1, 0.5, 0.5, 1, 0, 0);
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="container">
+            <div class="box">
+                SCALE
+            </div>
+        </div>
+        <div class="con1">
+            <div class="box1">
+                SKEW
+            </div>
+        </div>
+        <div class="con2">
+            <div class="box2">
+                ROTATE
+            </div>
+        </div>
+        <div class="con3">
+            <div class="box3">
+                TRANSLATE
+            </div>
+        </div>
+        <div class="con4">
+            <div class="box4">
+                MATRIX
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

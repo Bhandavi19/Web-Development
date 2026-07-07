@@ -1,0 +1,25 @@
+.game-area {
+  position: relative;
+  width: 100vmin;
+  height: 100vmin;
+  background-color: #232323;
+  margin: 0 auto;
+  border: 2px solid #ccc;
+  overflow: hidden;
+}
+
+.snake-dot {
+  position: absolute;
+  width: 2%;
+  height: 2%;
+  background-color: limegreen;
+  border-radius: 50%;
+}
+
+.snake-food {
+  position: absolute;
+  width: 2%;
+  height: 2%;
+  background-color: red;
+  border-radius: 50%;
+}

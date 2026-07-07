@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+        }
+
+        form {
+            width: 300px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #ddd;
+        }
+
+        input,
+        button {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+        }
+
+        .error {
+            color: red;
+            font-size: 14px;
+        }
+
+        .success {
+            border: 2px solid green;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Interactive Form</h2>
+    <form id="myForm">
+        <input type="text" id="name" placeholder="Enter Name">
+        <span class="error" id="nameError"></span>
+        <input type="email" id="email" placeholder="Enter Email">
+        <span class="error" id="emailError"></span>
+        <button type="submit">Submit</button>
+    </form>
+
+    <script>
+        document.getElementById("myForm").addEventListener("submit", function (event) {
+            event.preventDefault();
+            let name = document.getElementById("name");
+            let email = document.getElementById("email");
+            let nameError = document.getElementById("nameError");
+            let emailError = document.getElementById("emailError");
+
+            nameError.textContent = emailError.textContent = "";
+            name.classList.remove("success");
+            email.classList.remove("success");
+
+            if (name.value.trim() === "") nameError.textContent = "Name is required!";
+            else name.classList.add("success");
+
+            if (email.value.trim() === "" || !email.value.includes("@"))
+                emailError.textContent = "Valid email required!";
+            else email.classList.add("success");
+        });
+    </script>
+
+</body>
+
+</html>

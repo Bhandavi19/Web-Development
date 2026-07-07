@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex-Box</title>
+    <style>
+        .container {
+            color: crimson;
+            border: 2px solid maroon;
+            display: flex;
+            /* justify-content is for horizontal alginment */
+            justify-content: center;
+            /* algin item is for single line */
+            align-items: center;
+            /* flex-direction: column; */
+            flex-direction: row;
+            flex-wrap: wrap;
+            /* algin content is for mutiple lines for vertical alginment */
+            /* align-content: center; */
+            height: 40vh;
+            /* flex flow is a property where it is a shorthand property for flex diretcion and flex-wrap */
+            flex-flow: row wrap;
+            gap: 30px 10px;
+
+        }
+
+        .item {
+            color: rgb(228, 140, 24);
+            background-color: aqua;
+            border: 2px solid black;
+            /* margin: 3px; */
+            /* padding: 4px; */
+            width: 30px;
+            height: 20px;
+        }
+
+        .order-1 {
+            order: 1;
+        }
+
+        .order-2 {
+            order: 2;
+        }
+
+        .order-3 {
+            order: 3;
+        }
+
+        .order-4 {
+            order: 4;
+        }
+
+        .item1 {
+            /* flex-grow: 3; */
+            /* the particular item will be shrinked when ever it is neccesary */
+            /* flex-shrink: 2; */
+            align-self: self-end;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <div class="item order-1 item1">1</div>
+            <div class="item  order-2">2</div>
+            <div class="item order-3">3</div>
+            <div class="item order-4">4</div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <!-- <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div> -->
+            <!-- <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div> -->
+            <!-- <div class="item"></div> -->
+            <!-- <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div> -->
+
+        </div>
+    </main>
+</body>
+
+</html>
+
+
+
+<!--  slgin-self : algin the specific item to left or right or center-->
+<!-- algin-items: algin single row items fromtop and bottom -->
+<!-- justify-content: algin all the content from horizontally -->
+<!-- algin-content: algin all the content form top and bottom -->

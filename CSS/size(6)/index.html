@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS size</title>
+</head>
+<style>
+    /* div{
+        border: 2px solid black;
+    } */
+    html {
+        font-size: 16px;
+    }
+
+    .hi {
+        border: 2px solid black;
+        /* box-sizing: border-box; */
+        margin: auto;
+        width: 80vw;
+        height: 80vh;
+        background-color: bisque;
+        font-size: 2rem;
+        /* min-height: 100vh; */
+        width: 50%;
+    }
+
+    .can {
+        border: 2px solid black;
+        box-sizing: border-box;
+        margin: auto;
+        width: 80vw;
+        min-height: 300vh;
+        height: 10vh;
+        background-color: yellowgreen;
+        font-size: 2rem;
+        text-overflow: ellipsis;
+    }
+
+    .box {
+        font-size: 2rem;
+        border: 3px solid blue;
+        width: 35vw;
+        height: 35vh;
+
+        word-wrap: break-word;
+        /*way-1*/
+        overflow: auto;
+        /*way-2*/
+        overflow-x: scroll;
+        overflow-y: scroll;
+        /*way-3*/
+        overflow: scroll auto;
+        text-overflow: ellipsis;
+    }
+</style>
+
+<body>
+    <div>
+        <p class="hi">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam nisi sequi, adipisci nam repellat iste?
+            Laborum sunt nemo neque at.
+        </p>
+        <p class="can">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero saepe excepturi dolores
+            consequatur distinctio dolore reprehenderit a aliquid ipsa, fuga necessitatibus aspernatur, consectetur
+            neque natus itaque laboriosam provident nulla? Dolor eaque quia illum, animi ex, praesentium ducimus
+            voluptate deleniti porro tenetur iusto veritatis vero consequatur. Vero, commodi. Non temporibus quo
+            perferendis quibusdam consectetur tempore, optio officia adipisci rerum quos deserunt dolor accusantium
+            error. Perspiciatis iure optio porro perferendis tempora. Minima asperiores nam corrupti porro explicabo
+            reprehenderit aliquid quis quia dolor fuga, consequuntur eligendi quas atque impedit suscipit dignissimos
+            voluptatibus pariatur ullam non sapiente modi? Deserunt quos incidunt porro deleniti assumenda.</p>
+    </div>
+    <div class="box">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti expedita, quae suscipit corrupti laudantium
+            voluptatum delectus rerum, in dolor necessitatibus id itaque laboriosam unde veritatis. Repellat, quae! Quo,
+            quos corporis maxime facere atque autem perspiciatis tempora, molestiae quod modi, similique facilis
+            repellat natus excepturi doloremque dolore impedit amet mollitia consequuntur?</p>
+    </div>
+</body>
+
+</html>
+
+
+<!-- font-size by default is 16px -->
+<!-- if we put 2em then it inherits the 16px properties and as well as the total size will be 16*2 = 32px -->
+
+<!-- vh=view height
+      vw=view width 
+      vh=vmin
+      vw=vmax-->
+
+<!-- min height == when we set min height , let us suppose the min-height=10vh  when we add more content also the width will be expanded -->

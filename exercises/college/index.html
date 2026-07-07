@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countdown Timer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="timer-container">
+        <h1>Countdown Timer</h1>
+
+        <label for="time-input">Enter time (minutes):</label>
+        <input type="number" id="time-input" placeholder="Enter minutes" min="1">
+
+        <div class="preset-buttons">
+            <button onclick="setPreset(1)">1 Min</button>
+            <button onclick="setPreset(5)">5 Min</button>
+            <button onclick="setPreset(10)">10 Min</button>
+        </div>
+
+        <button id="start-btn">Start Timer</button>
+
+        <div id="timer-display">00:00</div>
+
+        <div class="controls">
+            <button id="pause-btn" disabled>Pause</button>
+            <button id="reset-btn" disabled>Reset</button>
+        </div>
+
+        <audio id="alarm-sound" src="alarm.mp3"></audio>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

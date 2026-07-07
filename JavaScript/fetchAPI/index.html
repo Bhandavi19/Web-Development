@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Weather Forecast</title>
+</head>
+
+<body>
+    <button onclick="getWeather()">Get London Weather</button>
+    <div id="output"></div>
+
+    <script>
+        async function getWeather() {
+            const url = 'https://weather-api167.p.rapidapi.com/api/weather/forecast?place=London%2CGB&cnt=3&units=standard&type=three_hour&mode=json&lang=en';
+            const options = {
+                method: 'GET',
+                headers: {
+                    'x-rapidapi-key': 'b1582804d0msh1c04bb25b79b5e7p1f46c7jsne08b3d2ceff7',
+                    'x-rapidapi-host': 'weather-api167.p.rapidapi.com',
+                    Accept: 'application/json'
+                }
+            };
+
+            try {
+                const response = await fetch(url, options);
+                const result = await response.json();
+                console.log(result);
+            } catch (error) {
+                console.error(error);
+            }
+        }
+    </script>
+</body>
+
+</html>

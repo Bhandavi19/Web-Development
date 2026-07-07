@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms in HTML</title>
+    <style>
+        body {
+            background-image: url('IMG-20240601-WA0170.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Form to Apply for Internship</h1>
+    <form method="post">
+        <div>
+            <label for="username">Enter your Username</label>
+            <input type="text" id="username" name="username" placeholder="Username" autofocus>
+        </div>
+        <br>
+        <div>
+            <label for="password">Enter your Password</label>
+            <input type="password" id="password" name="password" placeholder="Password">
+        </div>
+        <br>
+        <div>
+            <label for="college">Enter your College Name</label>
+            <input type="text" id="college" name="college" placeholder="Enter your college name">
+        </div>
+        <br>
+        <div>
+            <label for="year_of_study">Enter Year of Study</label>
+            <input type="text" id="year_of_study" name="year_of_study" placeholder="Year of study">
+        </div>
+        <br>
+        <div>
+            <label for="year_of_graduation">Enter Year of Graduation</label>
+            <input type="text" id="year_of_graduation" name="year_of_graduation" placeholder="Year of graduation">
+        </div>
+        <br>
+        <div>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+        </div>
+        <br>
+        <div>
+            <input type="checkbox" id="agree" name="agree" value="yes">
+            <label for="agree">I Agree to all Terms and Conditions</label>
+        </div>
+        <br>
+        <div>
+            <label for="about_you">Enter about your skills</label>
+            <br>
+            <textarea name="about_you" id="about_you" rows="5" cols="60"></textarea>
+        </div>
+        <br>
+        <div>
+            <label for="select_domain">Select Your Domain</label>
+            <select name="domain" id="select_domain">
+                <option value="machine learning">Machine Learning</option>
+                <option value="deep learning">Deep Learning</option>
+                <option value="web development">Web Development</option>
+                <option value="cloud computing">Cloud Computing</option>
+                <option value="java">Java</option>
+                <option value="python">Python</option>
+            </select>
+        </div>
+        <br>
+        <button type="submit">Submit</button>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam sunt tempora eos fugit id ducimus.
+            Reiciendis debitis officiis harum id culpa saepe corporis provident placeat minus ut dicta cum, odit rerum
+            sapiente ipsam facere sint, aspernatur ratione rem et! Autem.</p>
+    </form>
+</body>
+
+</html>

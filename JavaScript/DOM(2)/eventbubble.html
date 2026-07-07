@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Bubble</title>
+    <style>
+        .container {
+            border: 2px solid black;
+            margin: 20px;
+            padding: 20px;
+            background-color: aqua;
+        }
+
+        .childcontainer {
+            border: 2px solid black;
+            margin: 20px;
+            padding: 20px;
+            background-color: antiquewhite;
+        }
+
+        .grandchildcontainer {
+            border: 2px solid black;
+            margin: 20px;
+            padding: 20px;
+            background-color: burlywood;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="childcontainer">
+            <div class="grandchildcontainer">
+                I am grandchildcontainer
+            </div>
+        </div>
+    </div>
+    <script>
+        document.querySelector(".grandchildcontainer").addEventListener("click", (e) => {
+            e.stopPropagation();
+            alert("The grandchildcontainer was clicked successfully...!!!");
+        })
+        document.querySelector(".childcontainer").addEventListener("click", (e) => {
+            e.stopPropagation();
+            alert("The childcontainer was clicked successfully...!!!");
+        })
+        document.querySelector(".container").addEventListener("click", (e) => {
+            alert("The container was clicked successfully...!!!");
+        })
+
+        function getrandomcolor() {
+            let val1 = Math.ceil(Math.random() * 255);
+            let val2 = Math.ceil(Math.random() * 255);
+            let val3 = Math.ceil(Math.random() * 255);
+            return `rgb(${val1} , ${val2} , ${val3})`;
+        }
+        //setinterval and settimeout
+        let a = setInterval(() => {
+            document.querySelector(".grandchildcontainer").style.backgroundColor = getrandomcolor();
+        }, 500);
+        let b = setTimeout(() => {
+            document.querySelector(".grandchildcontainer").innerHTML = "I am a passionate web developer";
+        }, 3000);
+    </script>
+</body>
+
+</html>
+
+
+<!-- by using the stoppropogation method by clicking in the grandchild the parents wont get activated  -->
+
+<!-- we also have clear setinterval and as well as clear setimeout by doing this we can clear settime and interval  -->

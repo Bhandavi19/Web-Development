@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AJAX Data Binding</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; padding: 20px; }
+        button { padding: 10px; cursor: pointer; background: #007bff; color: white; border: none; margin: 10px; }
+        #dataContainer { margin-top: 20px; padding: 10px; border: 1px solid #ddd; }
+    </style>
+</head>
+<body>
+
+    <h2>AJAX Data Binding Example</h2>
+    <button id="loadData">Load User Data</button>
+    <div id="dataContainer">Click the button to fetch data.</div>
+
+    <script>
+        document.getElementById("loadData").addEventListener("click", function() {
+            let xhr = new XMLHttpRequest();
+            xhr.open("GET", "https://jsonplaceholder.typicode.com/users/1", true);
+            xhr.onload = function() {
+                if (this.status == 200) {
+                    let user = JSON.parse(this.responseText);
+                    document.getElementById("dataContainer").innerHTML = 
+                        `<strong>Name:</strong> ${user.name} <br> <strong>Email:</strong> ${user.email} <br> <strong>City:</strong> ${user.address.city}`;
+                }
+            };
+            xhr.send();
+        });
+    </script>
+
+</body>
+</html>

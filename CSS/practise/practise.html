@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        ::selection {
+            color: aqua;
+            background-color: black;
+        }
+
+        .a {
+            margin: 30px;
+            padding: 20px;
+            border: 2px solid black;
+            background-color: antiquewhite;
+        }
+
+        #hi {
+            margin: 10px;
+            padding: 20px;
+            border: 2px solid black;
+            background-color: aquamarine;
+        }
+
+        /* * {
+            margin: 10px;
+            padding: 10px;
+        } */
+        a:link {
+            color: brown;
+        }
+
+        a:visited {
+            color: aquamarine;
+        }
+
+        a:hover {
+            color: orange;
+            text-decoration: none;
+        }
+
+        a:active {
+            color: rgba(83, 80, 175, 0.929);
+        }
+
+        p {
+            background-color: blanchedalmond;
+        }
+
+        a {
+            border: 2px solid black;
+            color: aqua;
+        }
+
+        .container {
+            display: inline-block;
+            animation: marquee 10s linear infinite;
+            color: chocolate;
+            font-size: 2em;
+            background-color: chartreuse;
+            
+        }
+
+        @keyframes marquee {
+            from {
+                transform: translateX(100%);
+            }
+
+            to {
+                transform: translateX(-100%);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <img src="" alt="">
+    <video src="" controls loop poster=""></video>
+    <form action="post" method="post"></form>
+    <div>
+
+        <label for="username">Enter Your Username</label>
+        <input type="text" placeholder="Name">
+        <br>
+
+        <label for="password">Enter password</label>
+        <input type="password" name="password" id="password" placeholder="password">
+        <br>
+
+        <input type="radio">
+        <label for="gender">male</label>
+        <br>
+        <input type="radio">
+        <label for="gender">female</label>
+        <br>
+        <select name="domain">
+            <option value="cse">cse</option>
+            <option value="it">it</option>
+            <option value="aiml">aiml</option>
+            <option value="ece">ece</option>
+            <option value="">eee</option>
+        </select>
+        <br>
+        <label for="">Enter about you </label>
+        <br>
+        <textarea name="" placeholder="Enter about you" rows="10" cols="50"></textarea>
+        <br>
+        <input type="checkbox">
+        <label for="agreement">I agree all terms and conditions</label>
+        <input type="checkbox">
+        <label for="agreement">i agree all for 4 year degree</label>
+
+
+
+        <div class="a">
+            i am in div with a class
+        </div>
+        <div id="hi">
+            i am in id
+        </div>
+
+        <a href="https://www.google.com">Open Google</a>
+        <a href="https://www.facebook.com">Open Facebook</a>
+        <a href="https://www.instagram.com">Open Instagram</a>
+        <a href="https://samvidha.iare.ac.in/index">open</a>
+        <button>Submit</button>
+    </div>
+    <div>
+        I am div
+    </div>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam eum accusantium placeat soluta corporis,
+        dicta modi. Ea, provident facere aliquid iure repellat et blanditiis eius perferendis. Aperiam, et iste fugit
+        delectus ullam fuga non minima! Commodi, obcaecati dolorem repellat incidunt architecto explicabo sapiente nam
+        voluptate!</p>
+    <div class="container">
+        Breaking News...!! Today there is an event in IARE college
+    </div>
+</body>
+
+</html>

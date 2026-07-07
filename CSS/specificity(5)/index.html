@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Specificity</title>
+</head>
+<style>
+    h1 {
+        color: purple !important;
+    }
+
+    h1.hi {
+        color: blue;
+    }
+
+    .hello {
+        color: yellow;
+    }
+
+    .how {
+        color: brown
+    }
+
+    #class {
+        color: green
+    }
+</style>
+
+<body>
+    <div>
+        <h1 class="hi hello how" id="class" style="color: pink;">
+            I am heading
+        </h1>
+    </div>
+</body>
+
+</html>
+
+
+<!-- if the order is same like h1,hello,how are the classes means they are of same order the css checks for the position of styling which is at last position that coloring will be done  -->
+<!-- if the order is different specificity will be checked -->
+<!-- order of specificity
+   !important > Inline > Id selector > classes and attributes > element selector > universal selector-->
+
+<!-- 
+   Universal Selector: 0
+Element selectors and pseudo-elements: 1
+Class selectors, attribute selectors, and pseudo-classes: 10
+ID selectors: 100
+Inline styles: 1000 -->
+
+
+<!-- here we are written h1.hi which means the element selector value 1 and the class selector value is 10 so 1+10=11  whih highest than all-->
