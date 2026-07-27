@@ -10,9 +10,9 @@ let obj ={
     age:18,
 }
 //forin - used for objects
-for (const key in obj) {
-       const element = obj[key];
-       console.log(element);
+for (const i in obj) {
+       const element = obj[i];
+       console.log(i,element);
 }
 
 
@@ -31,12 +31,12 @@ for (const c of "Bhandavi") {
 // }
 
 
-// //do-while loop
-// let j=10;
-// do {
-//     console.log(j);
-//     j++;
-// } while (j<9);
+//do-while loop
+let j=10;
+do {
+    console.log(j);
+    j++;
+} while (j<9);
 
 
 //functions
@@ -61,3 +61,4 @@ const func = (x)=>{
 }
 
 func(90);
+

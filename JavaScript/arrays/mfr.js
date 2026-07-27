@@ -35,3 +35,5 @@ console.log(arr3.reduce(sum));//sum up all the elements present in the array
 //if we want to convert any object into array we use the following method
 let a = Array.from("Bhandavi")
 console.log(a);
+
+

@@ -21,3 +21,4 @@ else{
     alert(`the result is ${eval(`${a} ${b} ${c}`)}`);
     //heere we are changing the sign if the random is not greater than 0.1
 }
+
