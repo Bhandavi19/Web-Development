@@ -81,3 +81,4 @@ console.log(calc(10,20,mul));
 
 //add,sub,mul are called as callback functions becuase it passed as an argument to another function
 //calc is known as higher order function because it is accepting another function as input
+         

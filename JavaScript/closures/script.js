@@ -37,4 +37,4 @@ function a(){
 }
 
 let exmp = a();
-exmp();
+exmp();    

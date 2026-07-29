@@ -30,4 +30,4 @@ console.log(c,d)
 //here we are changing the value of 'd' which is a reference to 'c' so it will also change the value of 'c' because they are stored in same memory location
 //objects are stored in heap memory and 'c' and 'd' are refered to same object in the memory
 //thats why if we change in one reference it gets reflected in another reference
-//so this is called pass by reference 
+//so this is called pass by reference   
