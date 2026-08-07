@@ -131,13 +131,25 @@ function step4(){
 
 
 
-step1()
-.then(step2)
-.then(step3)
-.then(step4)
-.then(()=>{
-    console.log("all steps fulfilled");
-})
-.catch(()=>{
-    console.log("promise unfulfilled")
-})
+// step1()
+// .then(step2)
+// .then(step3)
+// .then(step4)
+// .then(()=>{
+//     console.log("all steps fulfilled");
+// })
+// .catch(()=>{
+//     console.log("promise unfulfilled")
+// })
+
+try{
+    await step1();
+    await step2();
+    await step3();
+    await step4();
+    console.log("promise fulfilled");
+}
+catch(error){
+
+}
+
