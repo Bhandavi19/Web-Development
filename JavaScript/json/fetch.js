@@ -1,6 +1,6 @@
-// fetch("https://catfact.ninja/facttt")
-// .then((res) => console.log(res))
-// .catch((error) => console.error("api failed"))
+fetch("https://catfact.ninja/fact")
+.then((res) => console.log(res))
+.catch((error) => console.error("api failed"))
 
 //"https://catfact.ninja/facttt" -- if we write like this it reaches to ther url server but the 'get' url is wrong so it shows 404 error
 //"https://catfactttt.ninja/fact" -- if we write like this it doesnot reaches the url server so it shows "api failed"
